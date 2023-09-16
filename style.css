@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    height: 70vh;
+    margin-top: 7%;
+    background: linear-gradient(105.9deg, rgb(15, 209, 165) 3.8%, rgb(15, 157, 209) 20.8%, rgb(133, 13, 230) 51.9%, rgb(230, 13, 202) 73.1%, rgb(242, 180, 107) 94.1%);    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 15px 10px 10px black;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-top: 120px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100% ;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    font-style: italic;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+}
+
+.flip-card-back p{
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.container .content2 .error-msg{
+  background: red;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px 420px;
+}
+
+
+.container .content2 .login-error-msg{
+  background: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 180px;
+}
+
+.container .content2 a{
+  width: 10px ;
+  text-decoration: none;
+  position: relative;
+  font-size: 35px;
+  top: 20px;
+  left: 70px;
+  padding: 5px 5px;
+  margin-left: 220px;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.container .content2 a:hover{
+  color: white;
+  transition:transform 0.6s;
+  cursor: pointer;
+  font-weight: bold;
+  background:#2980b9;
+}
+
+.container .content2 .login{
+    width: 10px ;
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+    top: 20px;
+    left: 20px;
+    padding: 5px 5px;
+    margin-left: 90px;
+    color: whitesmoke;
+    border-radius: 5px;
+  }
+
+
+
+.container .content2 h2{
+    text-align: center;
+    font-style: italic;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    color: whitesmoke;
+}
+
+.container .content2 input{
+    display: inline-block;
+    width: 95%;
+    padding: 15px 17px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .content2 .reset{
+    background: crimson;
+    color: white;
+}
+
+.container .content2 .register{
+    background: greenyellow;
+    color: black;
+}
+
+.container p{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+}
+
+.container .content2 .card{
+  width: 500px;
+  height: 400px;
+  text-align: center;
+}
+
+.container .content2 .card img{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 30px 0;
+}
+
+
+.container .content2 .card label{
+  display: block;
+  width: 200px;
+  background: blue;
+  color: white;
+  padding: 12px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.container .content2 .card input{
+  display: none;
+}
+
+.container .content2 .card h1{
+  margin: 25px auto;
+  color: white;
+}
+
+.container .content2 .card .logout{
+  position: absolute;
+  cursor: pointer;
+  top: 65%;
+  left: 52.5%;
+  z-index: 1;
+  background: red;
+  width: 140px;
+  font-style: italic;
+  font-weight: bold;
+}
